@@ -14,11 +14,11 @@
 #define DISPLAY_HEIGHT 720
 #endif
 
-#define DEBUG_PRINT(BallVec, i)									\
-do {												 \							              \
-std::cout << "Ball #" << i + 1 << ' ';								  \
-std::cout << '('<< BallVec[i].mBallVel.x << ", " << BallVec[i].mBallVel.y << ')' << std::endl;     \
-} while (false);         
+#define DEBUG_PRINT(BallVec, i)									                            \
+do {												 							             \
+std::cout << "Ball #" << i + 1 << ' ';								                          \
+std::cout << '('<< BallVec[i].mBallVel.x << ", " << BallVec[i].mBallVel.y << ')' << std::endl; \
+} while (false);            
 
 typedef struct {
 	float x;

@@ -19,6 +19,7 @@ Game::Game()
 	Ball ball2 = { { DISPLAY_WIDTH / 2, DISPLAY_HEIGHT / 2 }, { 250.0f, -240.0f } };
 	VecBall.push_back(ball2);
 #endif
+#undef INTERMEDIATE
 
 }
 
@@ -161,11 +162,11 @@ void Game::ProcessInput()
 		if (VecBall[i].mBallPos.x > DISPLAY_WIDTH + thickness) {
 			mIsRunning = false;
 		}
+#ifdef DEBUG
+		DEBUG_PRINT(VecBall, i);
+#endif
 	}
 
-#ifdef DEBUG
-	DEBUG_PRINT(VecBall, 0);
-#endif
 #undef DEBUG_PRINT
 }
 

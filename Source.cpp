@@ -1,9 +1,6 @@
 #include <iostream>
 #include "game.h"   
 
-#define DEBUG
-
-
 Game::Game()
 {
 	// TODO: Create 3 instances of Ball and change the game accordingly www
